@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Click Sandwiches</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div id="grilledcheese">
+		<h3>Grilled Cheese</h3>
+	</div>
+	<div id="cheesesteak">
+		<h3>Steak Cheese</h3>
+	</div>
+	<div id="chilicheese">
+		<h3>Cheese Burger</h3>
+	</div>
+	<div id="imageDiv"></div>
+
+	<script>
+		
+		grilledCheeseCounter = 0
+		cheeseSteakCounter = 0
+		chiliCheeseCounter = 0
+
+		$("#grilledcheese").on("click", function() {
+			alert("Nom nom nom");
+			grilledCheeseCounter++;
+			alert("You've eaten " + grilledCheeseCounter + " grilled cheese sandwiches")
+			$("#imageDiv").html("<img id='Grilled Cheese' src='./images/grilledcheese.jpeg' />")
+		});
+
+		$("#cheesesteak").on("click", function() {
+			alert("You Philly me!");
+			cheeseSteakCounter++;
+			alert("You've eaten " + cheeseSteakCounter + " cheese steaks")
+			$("#imageDiv").html("<img id='Cheese Steak' src='./images/steakcheese.jpg' />")
+		});
+
+		$("#chilicheese").on("click", function() {
+			alert("mmm mmm mmm so good");
+			chiliCheeseCounter++;
+			alert("You've eaten " + chiliCheeseCounter + " chili cheese burgers")
+			$("#imageDiv").html("<img id='Grilled Cheese' src='./images/chilicheese.jpg' />")
+		})
+
+
+	</script>
+</body>
+</html>
